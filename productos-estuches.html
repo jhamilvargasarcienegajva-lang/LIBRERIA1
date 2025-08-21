@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estuches Geométricos - Librería ITSA</title>
+    <meta name="description" content="Estuches geométricos de alta calidad para dibujo técnico en Librería ITSA">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/productos.css">
+</head>
+<body>
+    <!-- Header - Navegación Principal -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Librería ITSA</h1>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="#productos" class="nav-link">Productos</a>
+                    <a href="#ofertas" class="nav-link">Ofertas</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <button class="btn-back">
+                    <span class="back-icon">←</span>
+                    Volver Atrás
+                </button>
+                <nav class="breadcrumb-nav">
+                    <a href="index.html">Inicio</a>
+                    <span>/</span>
+                    <a href="index.html#productos">Productos</a>
+                    <span>/</span>
+                    <span>Estuches Geométricos</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Header de Categoría -->
+    <section class="category-header">
+        <div class="container">
+            <h1 class="category-title">📐 Estuches Geométricos</h1>
+            <p class="category-description">Estuches geométricos completos para dibujo técnico y matemáticas</p>
+            <div class="product-counter">
+                Mostrando <span id="product-count">9</span> productos
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros y Ordenamiento -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid">📱 Vista Cuadrícula</button>
+                    <button class="view-btn" data-view="table">📋 Vista Tabla</button>
+                </div>
+                <div class="sort-controls">
+                    <select class="sort-select">
+                        <option value="name">Ordenar por Nombre</option>
+                        <option value="price-low">Precio: Menor a Mayor</option>
+                        <option value="price-high">Precio: Mayor a Menor</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos en Vista Cuadrícula -->
+    <section class="products-grid-view active" id="grid-view">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Los productos se cargarán dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos en Vista Tabla -->
+    <section class="products-table-view" id="table-view">
+        <div class="container">
+            <div class="table-container">
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre del Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Los productos se cargarán dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Librería ITSA. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/back-button.js"></script>
+    <script src="js/estuches-loader.js"></script>
+</body>
+</html>
+
+
